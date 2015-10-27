@@ -9,8 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="Android system cooking persistent changes to system image il formato delle immagini di sistema (system.img) può essere o yaffs2 o ext4 (il primo sarà &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -88,7 +87,35 @@
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><h2>Android system cooking</h2>
+
+<h1>persistent changes to system image</h1>
+
+<p>il formato delle immagini di sistema (system.img) può essere o yaffs2 o ext4 (il primo sarà sostituito dal secondo).</p>
+
+<h1>emulator</h1>
+
+<p>L'immagine utilizzata dall' AVD è presa dalla directory del SDK, si possono seguire due strade:</p>
+
+<ul>
+<li>pack/unpack locale sull'host</li>
+<li>pack/unpack sul device</li>
+</ul>
+
+
+<p>Una volta creata l'immagine custom, usare il flag -system con il comando emulator
+Sull'emulatore installare nella partizione di sistema le GApps, Supersu e Xposed.</p>
+
+<h1>device</h1>
+
+<p>Risorse utili:</p>
+
+<p><a href="http://forum.xda-developers.com/showthread.php?t=2095854">http://forum.xda-developers.com/showthread.php?t=2095854</a>
+<a href="http://muzso.hu/2012/08/10/how-to-pack-and-unpack-system.img-and-userdata.img-from-an-android-factory-image">http://muzso.hu/2012/08/10/how-to-pack-and-unpack-system.img-and-userdata.img-from-an-android-factory-image</a>
+<a href="http://newandroidbook.com/tools/imgtool.html">http://newandroidbook.com/tools/imgtool.html</a>
+<a href="http://forum.xda-developers.com/showthread.php?t=2528952">http://forum.xda-developers.com/showthread.php?t=2528952</a>
+<a href="http://rex-shen.net/android-unpackpack-factory-images/">http://rex-shen.net/android-unpackpack-factory-images/</a>
+<a href="http://blog.vishalon.net/index.php/tutorial-how-to-make-a-change-permanent-in-system-folder-for-android-emulator-yaffs2ext4/">http://blog.vishalon.net/index.php/tutorial-how-to-make-a-change-permanent-in-system-folder-for-android-emulator-yaffs2ext4/</a></p>
 </div>
   
   
